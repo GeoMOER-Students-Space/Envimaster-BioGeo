@@ -54,7 +54,7 @@ ordihull(NMDS, ccl, lty=5,lwd=2 ,col="blue")
 
 # set amount of clusters which are useful
 count_clusters= 3
-ccl <- cutree(cluster, k=count_clusters)
+ccl <- cutree(cl, k=count_clusters)
 
 
 const(tdat, ccl)
