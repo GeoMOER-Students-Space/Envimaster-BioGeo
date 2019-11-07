@@ -31,4 +31,9 @@ df$col <- colSums(df,na.rm=T)
 col2 <- col/164
 row <- rowSums(df,na.rm=T)
 row2 <- row/41          
-          
+  
+rowmean <- rowMeans(df,na.rm=T)        
+rowmean
+
+colmean <- colMeans(df,na.rm=T)
+colmean
