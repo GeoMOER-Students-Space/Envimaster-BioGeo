@@ -2,8 +2,9 @@
 
 # Set project specific subfolders
 cat("#--- set Folders ---#",sep = "\n")
-project_folders = c("R/data/",                                
-                    "R/stage2",
+project_folders = c("R/data/org/",                                
+                    "R/data/stage2/",
+                    "R/REAVER/REAVER_hyperspace",
                     "R/src"
                     
 )
