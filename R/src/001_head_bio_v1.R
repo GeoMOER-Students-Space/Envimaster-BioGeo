@@ -9,8 +9,8 @@ require(link2GI)                  #E    n  nn    v v    r  r  m   m m   m   t   
                                   ###############################################           #
                                                                                             #
 # define needed libs and src folder                                                         #
-libs = c("link2GI","vegan") 
-pathdir = "stats/"
+libs = c("link2GI") 
+pathdir = "R/src/"
 
 #set root folder for uniPC or laptop                                                        #
 root_folder = alternativeEnvi(root_folder = "~/edu/Envimaster-BioGeo",                      #

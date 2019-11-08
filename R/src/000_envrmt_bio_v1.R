@@ -4,6 +4,7 @@
 cat("#--- set Folders ---#",sep = "\n")
 project_folders = c("R/data/org/",                                
                     "R/data/stage2/",
+                    "R/data/dendro/",
                     "R/REAVER/REAVER_hyperspace",
                     "R/src"
                     
