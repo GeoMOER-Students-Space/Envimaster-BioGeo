@@ -30,7 +30,7 @@ source(file.path(envrmt$path_REAVER_hyperspace,"dev_plot_hyperspace.R"))
 # load testdata
 
 df <- read.csv(file.path(envrmt$path_org,"plotcsv_ohneBG.csv"),header = T)
-df <- read.csv(file.path(envrmt$path_org,"plotcsv.csv"),header = T)
+df <- read.csv(file.path(envrmt$path_org,"plotcsv1.csv"),header = T)
 df
 
 ###long to wide
@@ -51,10 +51,11 @@ rownames(dfwide) <- dfwide$Plot.ID
 #2. gesellschaft nach waldtyp
 #3. Artspezifisch (waldtyp substrat)
 
-uwe drewald ernst dreising moosgesellschaften
-die pflanzengesellschft niedetrsachsens moosegesellschaften
+#uwe drewald ernst dreising moosgesellschaften
+#die pflanzengesellschft niedetrsachsens moosegesellschaften
+
 ###exclude first row
-dfw <-df[,-1]
+dfw <-dfwide[,-1]
 ###############################################################################################
 
 #boxplot data
