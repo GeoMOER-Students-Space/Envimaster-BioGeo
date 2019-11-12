@@ -50,6 +50,9 @@ rownames(dfwide) <- dfwide$Plot.ID
 #1. arten (gesamtliste) (allgemein descriptiv)
 #2. gesellschaft nach waldtyp
 #3. Artspezifisch (waldtyp substrat)
+
+uwe drewald ernst dreising moosgesellschaften
+die pflanzengesellschft niedetrsachsens moosegesellschaften
 ###exclude first row
 dfw <-df[,-1]
 ###############################################################################################
