@@ -2,7 +2,8 @@
 
 # Set project specific subfolders
 cat("#--- set Folders ---#",sep = "\n")
-project_folders = c("R/data/org/",                                
+project_folders = c("R/data/org/", 
+                    "R/data/stage2/",
                     "field_data/",
                     "field_data/stage_1/",
                     "field_data/stage_1/csv/",
