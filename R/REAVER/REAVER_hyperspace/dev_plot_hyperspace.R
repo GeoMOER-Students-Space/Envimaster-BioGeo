@@ -13,6 +13,8 @@
 #note: v1.2 returning improved cluster quality parameters
 # stats for HC only !!!
 
+# add stress level for nmds
+df <- SU_c
 
 Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE){
   if (missing(cl)){
@@ -26,6 +28,10 @@ Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE){
   dca<-decorana(df)
   #nmds
   nmds<-metaMDS(df)
+  
+  print(nmds$stress)
+  print(nmds$grstress)
+ 
   #clusters#########################################################################################
   #bray ward
   vdist <- vegdist(df, method = "bray", binary = FALSE)
