@@ -14,7 +14,7 @@
 # stats for HC only !!!
 
 # add stress level for nmds
-df <- su_c
+
 
 Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE){
   if (missing(cl)){
