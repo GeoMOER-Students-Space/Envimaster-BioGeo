@@ -203,19 +203,22 @@ SU_c[SU_c>0] <-1
 # source Function
 source(file.path(envrmt$path_REAVER_hyperspace,"dev_plot_hyperspace.r"))
 
+# for interpretation of nmds stress level:
+# over 0.2 coution, over 0.3 highly suspect
+
 # Explore Hyperspace with cover values
 Reaver_plot_hyperspace(SL_p,6)
 Reaver_plot_hyperspace(DW_p,4)
 Reaver_plot_hyperspace(EP_p,4)
 Reaver_plot_hyperspace(MP_p,4)
-Reaver_plot_hyperspace(SU_p,4)
+Reaver_plot_hyperspace(SU_p,3)
 
 # Explore Hyperspace with only appeariance
-Reaver_plot_hyperspace(SL_c,6, indi = T)
-Reaver_plot_hyperspace(DW_c,4, indi = T)
+Reaver_plot_hyperspace(SL_c,6)
+Reaver_plot_hyperspace(DW_c,4)
 Reaver_plot_hyperspace(EP_c,4)
-Reaver_plot_hyperspace(MP_c,6)
-Reaver_plot_hyperspace(SU_c,3, indi = T)
+Reaver_plot_hyperspace(MP_c,1)
+Reaver_plot_hyperspace(SU_c,3)
 dev.off()
 
 boxplot(SL_p,las=3)
@@ -223,6 +226,31 @@ boxplot(DW_p,las=3)
 boxplot(EP_p,las=3)
 boxplot(MP_p,las=3)
 boxplot(SU_p,las=3)
+
+mp_c <- MP_c[,-13] # ohne hypnum
+mp_p <- MP_p[,-13]
+su_p <- SU_p[,-13]
+su_c <- SU_c[,-13]
+
+# decorona requires rowsums >0, check for empty plots
+rowSums(su_c)
+rowSums(SU_c)
+
+test <- su_c[-su_c[rowSums(su_c)==0,]]
+su_c <- su_c[-which(rowSums(su_c) == 0),]
+su_p <- su_p[-which(rowSums(su_p) == 0),]
+
+boxplot(su_p,las=3)
+dev.off()
+
+length(unique(DW$spec))
+length(unique(SL$spec))
+length(unique(EP$spec))
+
+Reaver_plot_hyperspace(SU_c,4)
+Reaver_plot_hyperspace(SU_p,4)
+Reaver_plot_hyperspace(su_c,4)
+Reaver_plot_hyperspace(su_p,4)
 
 # delete hypnum
 dw <-DW_p[,-10]
@@ -323,6 +351,14 @@ dfp[dfp>=87.5 & dfp<100]<-5000
 #dfp <-t(dfp)
 return(dfp)
 }
+
+MP_out <-conv_num2bb(MP_p)
+SU_out <-conv_num2bb(SU_p)
+
+MP_out <- t(MP_out)
+SU_out <- t(SU_out)
+write.csv(MP_out,file.path(envrmt$path_lit,"Main_priv.csv"))
+write.csv(SU_out,file.path(envrmt$path_lit,"Subs_priv.csv"))
 
 class(dfp[13,2])
 
