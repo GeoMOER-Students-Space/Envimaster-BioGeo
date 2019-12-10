@@ -42,7 +42,7 @@ names(main)<- c("ID","Sub","level","cover","spec","treetyp","dep_ID")
 # optional rename treetyp for later merge with plot ID for epi
 unique(main$treetyp)
 main$treetyp <-as.character(main$treetyp)
-#rename treetyp
+# rename treetyp
 main$treetyp[main$treetyp=="Buche"]     <-"FS_" #fargus sylvatica
 main$treetyp[main$treetyp=="Eiche"]     <-"QP_" #Quercus petrea cf
 main$treetyp[main$treetyp=="Fichte"]    <-"PA_" #Picea abies
