@@ -210,7 +210,7 @@ source(file.path(envrmt$path_REAVER_hyperspace,"dev_plot_hyperspace.r"))
 Reaver_plot_hyperspace(SL_p,6)
 Reaver_plot_hyperspace(DW_p,4)
 Reaver_plot_hyperspace(EP_p,4)
-Reaver_plot_hyperspace(MP_p,4)
+Reaver_plot_hyperspace(MP_p,2)
 Reaver_plot_hyperspace(SU_p,3)
 
 # Explore Hyperspace with only appeariance
@@ -273,6 +273,7 @@ dev.off()
 boxplot(SU_p,las=3)
 
 
+dft <- MP_p
 # convert cover to count
 dft[dft>0] <- 1
 
@@ -285,7 +286,7 @@ dft[,-sp]
 # write out privot table
 
 #chnage rows and cols
-t(df)
+t(dft)
 write.csv(SU_p,file.path(envrmt$path_REAVER_hyperspace,"privot.csv"))
 
 # dev species plot appeeariences
@@ -295,6 +296,12 @@ df <- SU_p
 df
 
 require(mapview)
+
+##############################################################################################
+
+# substrate societys
+
+unique(MP)
 
 #define target row (anzahl row+1) saved to var
 n <-nrow(df)+1

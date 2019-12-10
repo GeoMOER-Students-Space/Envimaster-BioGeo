@@ -2,26 +2,10 @@
 
 # Set project specific subfolders
 cat("#--- set Folders ---#",sep = "\n")
-project_folders = c("R/data/org/", 
-                    "R/data/stage2/",
-                    "field_data/",
-                    "field_data/stage_1/",
-                    "field_data/stage_1/csv/",
-                    "field_data/stage_2/",
-                    "field_data/stage_2/csv/",
-                    "field_data/stage_3/",
-                    "field_data/stage_3/moss_families/",
-                    "field_data/stage_3/moss_families/csv/",
-                    "field_data/stage_3/moss_species/",
-                    "field_data/stage_3/moss_species/csv/",
-                    "field_data/stage_3/substrat/",
-                    "field_data/stage_3/substrat/csv/",
-                    "field_data/stage_3/tree_level/",
-                    "field_data/stage_3/tree_level/csv/",
-                    "field_data/stage_3/tree_species/",
-                    "field_data/stage_3/tree_species/csv/",
-                    "R/data/testdata/",
-                    "R/REAVER/REAVER_hyperspace",
+project_folders = c("R/data/org/",   #R data                 # original data   input          
+                    "R/data/stage2/",                        # processed data  output
+                    
+                    "R/REAVER/REAVER_hyperspace", # Functions
                     "R/src",
                     "doc",
                     "lit"
