@@ -74,4 +74,18 @@ cor.test(df$Tree_level,a)
 # COR.TEST INTERPRETATION
 # The p-value of the test is 1.29410^{-10}, which is less than the significance level alpha = 0.05. 
 # We can conclude that wt and mpg are significantly correlated with a correlation coefficient 
-# of -0.87 and p-value of 1.29410^{-10} .
+# of -0.87 and p-value of 1.29410^{-10}
+
+
+
+# P-VALUE significance interpretation
+
+#a certain trend toward significance (p=0.08)
+#approached the borderline of significance (p=0.07)
+#at the margin of statistical significance (p<0.07)
+#close to being statistically signi???cant (p=0.055)
+#fell just short of statistical significance (p=0.12)
+#just very slightly missed the significance level (p=0.086)
+#near-marginal significance (p=0.18)
+#only slightly non-significant (p=0.0738)
+#provisionally significant (p=0.073)
