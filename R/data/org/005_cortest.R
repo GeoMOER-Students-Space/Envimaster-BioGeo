@@ -9,7 +9,7 @@ require(link2GI)                  #E    n  nn    v v    r  r  m   m m   m   t   
                                   ###############################################           #
                                                                                             #
 # define needed libs and src folder                                                         #
-libs = c("link2GI","vegan","cluster","labdsv","rgdal","stringr") 
+libs = c("link2GI","vegan","cluster","labdsv","rgdal","stringr","ggplot2") 
 pathdir = "R/src/"
 
 #set root folder for uniPC or laptop                                                        #
@@ -31,6 +31,20 @@ source(file.path(envrmt$path_REAVER_hyperspace,"dev_plot_hyperspace.R"))
 
 df <- read.csv(file.path(envrmt$path_org,"004_tree_levels.csv"),header = T)
 
-as.numeric(df)
+a <-as.numeric(df$Department_age)
 
-cor.test(df$Tree_level,df$Habitat_description)
+
+# visualisierung der Daten
+qqnorm(a)
+qqline(a)
+
+# t-test normalverteilung (wenn p-value > 0.05 dann liegt normalverteilung vor)
+shapiro.test(a)
+
+# t-test testet den Mittelwertuntewrschied (zweier) Datenreihen (vorraussetzung ist dass die daten normalverteilt sind)
+t.test(df$Tree_level,a)
+
+
+# correlation test
+cor.test(df$Tree_level,a)
+class(df$Department_age)
