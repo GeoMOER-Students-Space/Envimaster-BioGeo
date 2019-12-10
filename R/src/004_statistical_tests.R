@@ -35,8 +35,10 @@ a <-as.numeric(df$Department_age)
 
 
 # visualisierung der Daten
-qqnorm(a)
-qqline(a)
+qqnorm(df$tree_type)
+qqline(df$tree_type)
+qqnorm(df$Tree_level)
+qqline(df$Tree_level)
 
 # SHAPIRO.TEST HOW TO
 # Shapiro-test normalverteilung (wenn p-value > 0.05 dann liegt normalverteilung vor)
@@ -69,7 +71,8 @@ t.test(df$Tree_level,a)
 # conf.int is the confidence interval of the correlation coefficient at 95% (conf.int = [-0.9338, -0.7441]);
 # sample estimates is the correlation coefficient (Cor.coeff = -0.87).
 
-cor.test(df$Tree_level,a)
+a <- cor.test(df$tree_type,df$Tree_level)
+a
 
 # COR.TEST INTERPRETATION
 # The p-value of the test is 1.29410^{-10}, which is less than the significance level alpha = 0.05. 
