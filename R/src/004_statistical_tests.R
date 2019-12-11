@@ -92,3 +92,16 @@ a
 #near-marginal significance (p=0.18)
 #only slightly non-significant (p=0.0738)
 #provisionally significant (p=0.073)
+
+# for not norminal distributed data
+cor.test(x,y,method = "spearm")
+
+# Der Wert für Spearmans Rho liegt stets zwischen -1 und +1 und ist wie folgt zu interpretieren:
+  
+#  > 0 -> gleichsinniger monotoner Zusammenhang
+# ??? 0 -> kein monotoner Zusammenhang
+# < 0 -> gegensinniger monotoner Zusammenhang
+#Ein Problem für die Aussagekraft des Koeffizienten stellt das Auftreten sogenannter 
+# verbundener Ränge (auch Rangplatzbindungen oder ties) dar: Treten Werte mehrfach auf, 
+# bekommen diese nämlich einen Durchschnittsrang (berechnet als arithmetisches Mittel der 
+# zu vergebenden Ränge) zugewiesen.
