@@ -105,3 +105,5 @@ cor.test(x,y,method = "spearm")
 # verbundener Ränge (auch Rangplatzbindungen oder ties) dar: Treten Werte mehrfach auf, 
 # bekommen diese nämlich einen Durchschnittsrang (berechnet als arithmetisches Mittel der 
 # zu vergebenden Ränge) zugewiesen.
+
+# see help of cor.test. leads to packages for either normal cor test and spearman method for better performance
