@@ -93,9 +93,26 @@ a
 #only slightly non-significant (p=0.0738)
 #provisionally significant (p=0.073)
 
+<<<<<<< HEAD
 
 
 
 b <- cor.test(a,b , method = "spearman")
 
 ## FOR non normal distributed data
+=======
+# for not norminal distributed data
+cor.test(x,y,method = "spearm")
+
+# Der Wert für Spearmans Rho liegt stets zwischen -1 und +1 und ist wie folgt zu interpretieren:
+  
+#  > 0 -> gleichsinniger monotoner Zusammenhang
+# ??? 0 -> kein monotoner Zusammenhang
+# < 0 -> gegensinniger monotoner Zusammenhang
+#Ein Problem für die Aussagekraft des Koeffizienten stellt das Auftreten sogenannter 
+# verbundener Ränge (auch Rangplatzbindungen oder ties) dar: Treten Werte mehrfach auf, 
+# bekommen diese nämlich einen Durchschnittsrang (berechnet als arithmetisches Mittel der 
+# zu vergebenden Ränge) zugewiesen.
+
+# see help of cor.test. leads to packages for either normal cor test and spearman method for better performance
+>>>>>>> 1729300244eca615860975a17eb0c606f48f80ab
