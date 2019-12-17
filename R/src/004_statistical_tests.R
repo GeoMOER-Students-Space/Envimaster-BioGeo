@@ -78,8 +78,8 @@ a
 # The p-value of the test is 1.29410^{-10}, which is less than the significance level alpha = 0.05. 
 # We can conclude that wt and mpg are significantly correlated with a correlation coefficient 
 # of -0.87 and p-value of 1.29410^{-10}
-
-
+# positive values indicate a proportional relatuonship
+# negative vaules indicates antiproportional realtionships
 
 # P-VALUE significance interpretation
 
@@ -92,3 +92,10 @@ a
 #near-marginal significance (p=0.18)
 #only slightly non-significant (p=0.0738)
 #provisionally significant (p=0.073)
+
+
+
+
+b <- cor.test(a,b , method = "spearman")
+
+## FOR non normal distributed data
