@@ -4,7 +4,7 @@
 cat("#--- set Folders ---#",sep = "\n")
 project_folders = c("R/data/org/",   #R data                 # original data   input          
                     "R/data/stage2/",                        # processed data  output
-                    
+                    "R/data/privot",
                     "R/REAVER/REAVER_hyperspace", # Functions
                     "R/src",
                     "doc",
