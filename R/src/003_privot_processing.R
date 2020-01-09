@@ -22,6 +22,41 @@ source(file.path(root_folder, paste0(pathdir,"000_envrmt_bio_v1.R")))
 ###---------------------------------------------------------------------------------------###
 #############################################################################################
 
+treecov <- c(10,	30,	20,	30,	40,	60,	30,	30,	5,	5,	90,	60,	60,	70,	80,	85,	50,	80)
+richn <- c(5,	8,	4,	5,	12,	4,	10,	11,	11,	7,	6,	9,	10,	9,	10,	8,	7,	8)
+cover <-c(7100,	10200,	2700,	5000,	4800,	3300,	7900,	9500,	9900,	5800,	7700,	6800,	6500,	5100,	7400,	5300,	5400,	4400)
+treetyp <-c(1,	1,	1,	1,	1,	1,	1,	1,	0,	0,	2,	2,	2,	2,	2,	2,	2,	2)
+treespec <-c(3,	3,	3,	1,	2,	2,	2,	2,	4,	4,	5,	5,	5,	6,	6,	6,	6,	6)
+dev.off()
+
+plot(#treecov,
+  richn)
+
+
+library(ggplot2)
+qplot(treecov,treespec)
+
+lm <-lm(treecov~treespec)
+plot(lm)
+t.test(treecov,treespec)
+shapiro.test(treetyp)
+
+qqnorm(richn)
+cor.test(treetyp,treespec,method = "pearson")
+
+cor.test(treecov,richn)
+
+cor.test(treetyp,cover)
+cor.test(treetyp,richn)
+
+cor.test(treespec,cover)
+cor.test(treespec,richn)
+
+corstat <- function (x) {
+  t.test(x)
+  
+}
+
 #load data
 list.files(envrmt$path_org)
 org <- read.csv(file.path(envrmt$path_org,"003_Data_clean.csv"))
@@ -42,16 +77,16 @@ names(main)<- c("ID","Sub","level","cover","spec","treetyp","dep_ID")
 # optional rename treetyp for later merge with plot ID for epi
 unique(main$treetyp)
 main$treetyp <-as.character(main$treetyp)
-# rename treetyp
+#rename treetyp
 main$treetyp[main$treetyp=="Buche"]     <-"FS_" #fargus sylvatica
 main$treetyp[main$treetyp=="Eiche"]     <-"QP_" #Quercus petrea cf
 main$treetyp[main$treetyp=="Fichte"]    <-"PA_" #Picea abies
 main$treetyp[main$treetyp=="Hainbuche"] <-"CB_" #Carpinus betulus
 main$treetyp[main$treetyp=="Birke"]     <-"BP_" #Betula pendula
-main$treetyp[main$treetyp=="Laerche"]    <-"LD_" # Larix decidua
+main$treetyp[main$treetyp=="Laerche"]   <-"LD_" #Larix decidua
 main$treetyp[main$treetyp=="Douglasie"] <-"PM_" #Pseudotsuga menziesii
 main$treetyp[main$treetyp=="Eberesche"] <-"SA_" #Sorbus aucuparia
-main$treetyp[main$treetyp=="Ahorn"]     <-"AS_" # Acer spec, unknown species
+main$treetyp[main$treetyp=="Ahorn"]     <-"AS_" #Acer spec, unknown species
 
 # set minimum cover for NA
 main$cover <-as.character(main$cover)
@@ -210,14 +245,14 @@ source(file.path(envrmt$path_REAVER_hyperspace,"dev_plot_hyperspace.r"))
 Reaver_plot_hyperspace(SL_p,6)
 Reaver_plot_hyperspace(DW_p,4)
 Reaver_plot_hyperspace(EP_p,4)
-Reaver_plot_hyperspace(MP_p,2)
+Reaver_plot_hyperspace(MP_p,4)
 Reaver_plot_hyperspace(SU_p,3)
 
 # Explore Hyperspace with only appeariance
 Reaver_plot_hyperspace(SL_c,6)
 Reaver_plot_hyperspace(DW_c,4)
 Reaver_plot_hyperspace(EP_c,4)
-Reaver_plot_hyperspace(MP_c,1)
+Reaver_plot_hyperspace(MP_c,5)
 Reaver_plot_hyperspace(SU_c,3)
 dev.off()
 
