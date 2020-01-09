@@ -52,3 +52,26 @@ reclassBB <- function(main){
   main$cover <-as.numeric(main$cover)
   return(main)
   }
+
+
+### reclass numeric values back to BB
+conv_num2bb <- function(dfp){
+  dfp[dfp>=0.1 & dfp<0.5]  <-100
+  dfp[dfp>=0.5 & dfp<2.5]  <-500
+  dfp[dfp>=2.5 & dfp<15]  <- 1000
+  dfp[dfp>=15 & dfp<37.5]   <- 2000
+  dfp[dfp>=37.5 & dfp<62.5] <-3000
+  dfp[dfp>=62.5 & dfp<87.5] <-4000
+  dfp[dfp>=87.5 & dfp<100]<-5000
+  
+  dfp[dfp==1000] <- 1
+  dfp[dfp==2000] <- 2
+  dfp[dfp==3000] <- 3
+  dfp[dfp==4000] <- 4
+  dfp[dfp==5000] <- 5
+  dfp[dfp==100] <- "r"
+  dfp[dfp==500] <- "+"
+  dfp[dfp==0] <- " "
+  dfp <-t(dfp)
+  return(dfp)
+}
