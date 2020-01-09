@@ -1,0 +1,54 @@
+# functions for preprocessing moos data
+
+
+### translate Treetyp names from German in latin short
+trlateTree <- function (main){
+  main$treetyp <-as.character(main$treetyp)
+  #rename treetyp
+  main$treetyp[main$treetyp=="Buche"]     <-"FS_" #fargus sylvatica
+  main$treetyp[main$treetyp=="Eiche"]     <-"QP_" #Quercus petrea cf
+  main$treetyp[main$treetyp=="Fichte"]    <-"PA_" #Picea abies
+  main$treetyp[main$treetyp=="Hainbuche"] <-"CB_" #Carpinus betulus
+  main$treetyp[main$treetyp=="Birke"]     <-"BP_" #Betula pendula
+  main$treetyp[main$treetyp=="Laerche"]   <-"LD_" #Larix decidua
+  main$treetyp[main$treetyp=="Douglasie"] <-"PM_" #Pseudotsuga menziesii
+  main$treetyp[main$treetyp=="Eberesche"] <-"SA_" #Sorbus aucuparia
+  main$treetyp[main$treetyp=="Ahorn"]     <-"AS_" #Acer spec, unknown species
+  return(main)}
+
+###check for empty, " " or NA cells
+# any(main$cover==" "|main$cover=="None"|is.na(main$cover) )
+
+# following function is not needed, eventually there could be problems with facotr/character
+#mincov <- function(main){
+# main$cover <-as.character(main$cover)
+#  
+#  # set NA or " " cells to "None"
+#  main$cover[is.na(main$cover)] <- "None" # set "None" to NA cells
+#  main$cover[main$cover==""] <- "None" #set "None" to " " cells
+#  main$cover[main$cover=="None"] <- "r" # replace all "None" with "r"
+#  return(main)}
+
+### reclass BB sclae to numeric
+reclassBB <- function(main){
+  main$cover <-as.character(main$cover)
+  #check if any values are not in BB scale
+  check<-any(main$cover!="r"
+             &main$cover!="+"
+             &main$cover!=1
+             &main$cover!=2
+             &main$cover!=3
+             &main$cover!=4
+             &main$cover!=5)
+  if(check==FALSE){print("no missing values")} else {stop("there are missing values/empty cells")}
+  
+  main$cover[main$cover=="r"]<- 0.1 # far less 1
+  main$cover[main$cover=="+"]<- 0.5 # less 1
+  main$cover[main$cover==1]  <- 2.5 # less 5
+  main$cover[main$cover==2]  <- 15  #mean(5:25)
+  main$cover[main$cover==3]  <- 37.5#mean(25:50)
+  main$cover[main$cover==4]  <- 62.5#mean(50:75)
+  main$cover[main$cover==5]  <- 87.5#mean(75:100)
+  main$cover <-as.numeric(main$cover)
+  return(main)
+  }
