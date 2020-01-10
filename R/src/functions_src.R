@@ -14,6 +14,7 @@ trlateTree <- function (main){
   main$treetyp[main$treetyp=="Douglasie"] <-"PM_" #Pseudotsuga menziesii
   main$treetyp[main$treetyp=="Eberesche"] <-"SA_" #Sorbus aucuparia
   main$treetyp[main$treetyp=="Ahorn"]     <-"AS_" #Acer spec, unknown species
+  print("translate done")
   return(main)}
 
 ###check for empty, " " or NA cells
@@ -40,7 +41,7 @@ reclassBB <- function(main){
              &main$cover!=3
              &main$cover!=4
              &main$cover!=5)
-  if(check==FALSE){print("no missing values")} else {stop("there are missing values/empty cells")}
+  if(check==FALSE){print("only BBscale values detected")} else {stop("there are missing values/empty cells")}
   
   main$cover[main$cover=="r"]<- 0.1 # far less 1
   main$cover[main$cover=="+"]<- 0.5 # less 1
@@ -50,6 +51,7 @@ reclassBB <- function(main){
   main$cover[main$cover==4]  <- 62.5#mean(50:75)
   main$cover[main$cover==5]  <- 87.5#mean(75:100)
   main$cover <-as.numeric(main$cover)
+  print("reclass to numeric done")
   return(main)
   }
 
@@ -73,5 +75,6 @@ conv_num2bb <- function(dfp){
   dfp[dfp==500] <- "+"
   dfp[dfp==0] <- " "
   dfp <-t(dfp)
+  print("reclass to BBscale done")
   return(dfp)
 }
