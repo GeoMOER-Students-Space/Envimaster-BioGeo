@@ -25,6 +25,9 @@ source(file.path(root_folder, paste0(pathdir,"000_envrmt_bio_v1.R")))
 # preprocession
 # script to preprocess the org datatables for further analysis
 
+# source Functions
+source(file.path(envrmt$path_src,"functions_src.R"))
+
 #load data
 #list.files(envrmt$path_org)
 org <- read.csv(file.path(envrmt$path_org,"003_Data_clean.csv"))
