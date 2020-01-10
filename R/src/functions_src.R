@@ -78,10 +78,12 @@ conv_num2bb <- function(dfp){
   print("reclass to BBscale done")
   return(dfp)
 }
+
+
 delete.species <-function(tab,name){
   species <- which(colnames(tab)==name)
   tab_del <- tab[,-species]
-  if(any(rowSums(tab_del)==TRUE)){
+  if(any(rowSums(tab_del)==0)==TRUE){
     tab_clean <- tab_del[-which(rowSums(tab_del)==0),]
     print("done clean")
     return(tab_clean)
