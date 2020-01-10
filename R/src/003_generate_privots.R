@@ -27,6 +27,7 @@ source(file.path(root_folder, paste0(pathdir,"000_envrmt_bio_v1.R")))
 
 #load data
 main <- read.csv(file.path(envrmt$path_stage2,"main_clean.csv"))
+head(main)
 main<- main[,-1]
 # 1. prepare datasets for privot tables
 
@@ -109,17 +110,17 @@ MP_c[MP_c>0] <-1
 SU_c[SU_c>0] <-1
 
 # 4. write out Privot tables for ordination
-write.csv(SL_p,file.path(envrmt$path_privot,"soil.csv"))
-write.csv(DW_p,file.path(envrmt$path_privot,"deadwood.csv"))
-write.csv(EP_p,file.path(envrmt$path_privot,"epi.csv"))
-write.csv(MP_p,file.path(envrmt$path_privot,"mainplots.csv"))
-write.csv(SU_p,file.path(envrmt$path_privot,"substrates.csv"))
+write.csv(SL_p,file.path(envrmt$path_privot,"soil_cov.csv"))
+write.csv(DW_p,file.path(envrmt$path_privot,"deadwood_cov.csv"))
+write.csv(EP_p,file.path(envrmt$path_privot,"epi_cov.csv"))
+write.csv(MP_p,file.path(envrmt$path_privot,"mainplots_cov.csv"))
+write.csv(SU_p,file.path(envrmt$path_privot,"substrates_cov.csv"))
 
-write.csv(SL_c,file.path(envrmt$path_privot,"soil_c.csv"))
-write.csv(DW_c,file.path(envrmt$path_privot,"deadwood_c.csv"))
-write.csv(EP_c,file.path(envrmt$path_privot,"epi_c.csv"))
-write.csv(MP_c,file.path(envrmt$path_privot,"mainplots_c.csv"))
-write.csv(SU_c,file.path(envrmt$path_privot,"substrates_c.csv"))
+write.csv(SL_c,file.path(envrmt$path_privot,"soil_occur.csv"))
+write.csv(DW_c,file.path(envrmt$path_privot,"deadwood_occur.csv"))
+write.csv(EP_c,file.path(envrmt$path_privot,"epi_occur.csv"))
+write.csv(MP_c,file.path(envrmt$path_privot,"mainplots_occur.csv"))
+write.csv(SU_c,file.path(envrmt$path_privot,"substrates_occur.csv"))
 
 # 5. write out privot tables with bb scale for Species Tables
 
