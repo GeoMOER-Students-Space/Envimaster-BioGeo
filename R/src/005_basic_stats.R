@@ -122,4 +122,47 @@ head(df)
 df2 <- cbind(df,dfcov)
 head(df2)
 
-write.csv(df2,file.path(envrmt$path_stage2,"basic_stats.csv"))
+# add species richness for substartes
+
+#copy df
+df3 <-df2
+#set all values to 1
+df3[df3>0]<-1
+
+richness <-colSums(df3,na.rm = T)
+
+#add to df, rename row and set NA where richness is not logical
+df3 <- rbind(df2,richness)
+rownames(df3)[rownames(df3) == "33"] <- "Richness"
+df3[33,5:12] <-NA
+
+#write out
+write.csv(df3,file.path(envrmt$path_stage2,"basic_stats.csv"))
+#######################################################################
+
+# unique species
+
+# get list of species per substrate
+uniSL <-unique(rownames(SL))
+uniDW <-unique(rownames(DW))
+uniEP <-unique(rownames(EP))
+
+#union the two others to set diff to the desired substate
+d4SL <-union(uniEP,uniDW)
+d4DW <-union(uniEP,uniSL)
+d4EP <-union(uniDW,uniSL)
+
+# set diff (which are only in substarte)
+# prints the species which only occure on 1 substarte
+setdiff(uniSL,d4SL)
+setdiff(uniDW,d4DW)
+setdiff(uniEP,d4EP)
+
+# print the species difference from SL and EP
+# teresstrial moos not as EP moos
+setdiff(uniSL,uniEP)
+
+# EP moos not as teresstrial moos
+setdiff(uniEP,uniSL)
+
+
