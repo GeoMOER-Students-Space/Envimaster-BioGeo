@@ -121,3 +121,5 @@ head(df)
 # merge informations
 df2 <- cbind(df,dfcov)
 head(df2)
+
+write.csv(df2,file.path(envrmt$path_stage2,"basic_stats.csv"))
