@@ -141,6 +141,7 @@ write.csv(df3,file.path(envrmt$path_stage2,"basic_stats.csv"))
 #######################################################################
 
 # unique species
+# !!! hier nochmal die Logic prüfen !!!
 
 # get list of species per substrate
 uniSL <-unique(rownames(SL))
