@@ -9,7 +9,7 @@ require(link2GI)                  #E    n  nn    v v    r  r  m   m m   m   t   
 ###############################################           #
 #
 # define needed libs and src folder                                                         #
-libs = c("link2GI","vegan","cluster","labdsv","rgdal","stringr") 
+libs = c("link2GI","vegan","cluster","labdsv","rgdal","stringr","corrplot") 
 pathdir = "R/src/"
 
 #set root folder for uniPC or laptop                                                        #
@@ -108,5 +108,11 @@ cor.test(covt,slay, method = "spearman")
 cor.test(covt,hlay, method = "spearman")
 cor.test(covt,ttyp, method = "spearman")
 cor.test(covt,tcla, method = "spearman")
+
+
+# just some corplotting (doenst shor p-value!!!)
+df <- cbind(rich,covt,hlay,slay,tlay,ttyp,tcla)
+cormat <- cor(df)
+corrplot(cormat)
 
 # result: either on spearman or pearson only scrublayer has a correlation
