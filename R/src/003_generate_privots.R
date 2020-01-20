@@ -25,6 +25,9 @@ source(file.path(root_folder, paste0(pathdir,"000_envrmt_bio_v1.R")))
 # compute Privot tables
 # script to compute Privot tables
 
+# source Functions
+source(file.path(envrmt$path_src,"functions_src.R"))
+
 #load data
 main <- read.csv(file.path(envrmt$path_stage2,"main_clean.csv"))
 head(main)
