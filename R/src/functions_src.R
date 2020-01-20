@@ -26,6 +26,8 @@ trlateDepart <- function(main){
   main$dep_ID[main$dep_ID=="DG"]     <-"PM_" #Pseudotsuga menziesii
   main$dep_ID[main$dep_ID=="FI"]     <-"PA_" #Picea abies
   main$dep_ID[main$dep_ID=="LA"]     <-"LD_" #Larix decidua
+  main$dep_ID[main$dep_ID=="CL"]     <-"CL_" # clearing
+  main$dep_ID[main$dep_ID=="XX"]     <-"XX_" # unknown
   print("translate done")
   return(main)}
 
