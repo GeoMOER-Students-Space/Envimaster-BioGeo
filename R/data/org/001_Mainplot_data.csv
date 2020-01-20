@@ -1,19 +1,19 @@
 Plot-ID	treetyp	treetyp_num	treeclass	treeclass_num	Date	UTM-E	UTM-N	Height	Tree_layer	Shrub_layer	Herb_layer	Soil_layer	Habitat	Comments	Subplot-ID	Tree_species
-EIP02	QP	1	AS	1	16.5.19	477936	5632190	NA	70	0	0	0	Eichen Buchen Mischwald	Meisten bﾄume nur lvl1	RK01	NA
-EIP03	QP	1	AS	1	16.5.19	477770	5632252	NA	80	0	0	0	Eichen Buchen Mischwald	Unterhang	SL01	NA
-BUP04	FS	2	AS	1	16.5.19	477629	5632168	NA	60	0	0	0	Junger Buchenwald	kein SL/RK	EP01	Buche
-BUP05	FS	2	AS	1	16.5.19	477632	5632272	NA	90	0	0	0	Junger Buchenwald	dunkel	DW01	NA
-BUP06	FS	2	AS	1	16.5.19	477610	5632193	NA	60	0	0	0	Buchenforst	trocken	SL01	NA
-DGP17	PM	3	GS	2	2.7.19	477325	5632013	351	40	0	30	70	Douglasienforst		DW01	NA
-DGP18	PM	3	GS	2	2.7.19	477324	5632221	301	60	0	0	90	Douglasienforst		EP01	Douglasie
-DGP19	PM	3	GS	2	2.7.19	477222	5632233	331	30	0	80	20	Douglasienforst	Starker Unterwuchs	DW01	NA
-DGP20	PM	3	GS	2	2.7.19	477183	5632197	334	30	0	40	30	Douglasienforst		SL01	NA
-LAP21	LD	4	GS	2	2.7.19	477408	5631622	389	5	5	90	10	Waldlichtung mit Laerchen		DW01	NA
-EIP22	QP	1	AS	1	4.7.19	477965	5632240	NA	80	10	30	0	Junger Eichen Buchen Mischwald		SL01	NA
-EIP23	QP	1	AS	1	4.7.19	477853	5632308	NA	85	5	5	5	Eichen Buchen Mischwald		DW01	NA
-EIP24	QP	1	AS	1	4.7.19	477799	5632353	270	50	10	5	5	Eichen Buchen Mischwald		SL01	NA
-CLP25	CL	5	NA	0	4.7.19	477716	5632425	313	5	10	90	10	Waldlichtung mit Laerchen	Waldlichtung	EP01	Hainbuche
-XXP26	XX	6	GS	2	4.7.19	477251	5632763	255	30	10	70	10	Douglasienforst	Lichtdurchflutet	SL01	NA
-FIP27	PA	7	GS	2	4.7.19	477119	5632272	245	30	10	10	20	Fichtenforst	Lichtdurchflutet	DW01	NA
-FIP28	PA	7	GS	2	4.7.19	477000	5632787	NA	20	20	80	0	Fichtenforst	Eindeutig Fichte	SL01	NA
-FIP29	PA	7	GS	2	4.7.19	477105	5632610	256	10	40	80	5	Fichtenforst	Lichtdurchflutet	DW01	NA
+P02	QP	1	AS	1	16.5.19	477936	5632190	NA	70	0	0	0	Eichen Buchen Mischwald	Meisten bﾄume nur lvl1	RK01	NA
+P03	QP	1	AS	1	16.5.19	477770	5632252	NA	80	0	0	0	Eichen Buchen Mischwald	Unterhang	SL01	NA
+P04	FS	2	AS	1	16.5.19	477629	5632168	NA	60	0	0	0	Junger Buchenwald	kein SL/RK	EP01	Buche
+P05	FS	2	AS	1	16.5.19	477632	5632272	NA	90	0	0	0	Junger Buchenwald	dunkel	DW01	NA
+P06	FS	2	AS	1	16.5.19	477610	5632193	NA	60	0	0	0	Buchenforst	trocken	SL01	NA
+P17	PM	3	GS	2	2.7.19	477325	5632013	351	40	0	30	70	Douglasienforst		DW01	NA
+P18	PM	3	GS	2	2.7.19	477324	5632221	301	60	0	0	90	Douglasienforst		EP01	Douglasie
+P19	PM	3	GS	2	2.7.19	477222	5632233	331	30	0	80	20	Douglasienforst	Starker Unterwuchs	DW01	NA
+P20	PM	3	GS	2	2.7.19	477183	5632197	334	30	0	40	30	Douglasienforst		SL01	NA
+P21	LD	4	GS	2	2.7.19	477408	5631622	389	5	5	90	10	Waldlichtung mit Laerchen		DW01	NA
+P22	QP	1	AS	1	4.7.19	477965	5632240	NA	80	10	30	0	Junger Eichen Buchen Mischwald		SL01	NA
+P23	QP	1	AS	1	4.7.19	477853	5632308	NA	85	5	5	5	Eichen Buchen Mischwald		DW01	NA
+P24	QP	1	AS	1	4.7.19	477799	5632353	270	50	10	5	5	Eichen Buchen Mischwald		SL01	NA
+P25	CL	5	NA	0	4.7.19	477716	5632425	313	5	10	90	10	Waldlichtung mit Laerchen	Waldlichtung	EP01	Hainbuche
+P26	XX	6	GS	2	4.7.19	477251	5632763	255	30	10	70	10	Douglasienforst	Lichtdurchflutet	SL01	NA
+P27	PA	7	GS	2	4.7.19	477119	5632723	245	30	10	10	20	Fichtenforst	Lichtdurchflutet	DW01	NA
+P28	PA	7	GS	2	4.7.19	477000	5632787	NA	20	20	80	0	Fichtenforst	Eindeutig Fichte	SL01	NA
+P29	PA	7	GS	2	4.7.19	477105	5632610	256	10	40	80	5	Fichtenforst	Lichtdurchflutet	DW01	NA
