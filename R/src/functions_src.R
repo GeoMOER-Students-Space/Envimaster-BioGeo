@@ -17,6 +17,18 @@ trlateTree <- function (main){
   print("translate done")
   return(main)}
 
+
+### translate department treetyp in english
+trlateDepart <- function(main){
+  main$dep_ID <-as.character(main$dep_ID)
+  main$dep_ID[main$dep_ID=="BU"]     <-"FS_" #fargus sylvatica
+  main$dep_ID[main$dep_ID=="EI"]     <-"QP_" #Quercus petrea cf
+  main$dep_ID[main$dep_ID=="DG"]     <-"PM_" #Pseudotsuga menziesii
+  main$dep_ID[main$dep_ID=="FI"]     <-"PA_" #Picea abies
+  main$dep_ID[main$dep_ID=="LA"]     <-"LD_" #Larix decidua
+  print("translate done")
+  return(main)}
+
 ###check for empty, " " or NA cells
 # any(main$cover==" "|main$cover=="None"|is.na(main$cover) )
 

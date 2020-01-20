@@ -42,6 +42,8 @@ names(main)<- c("ID","Sub","level","cover","spec","treetyp","dep_ID")
 #translate Treetyp names
 main <-trlateTree(main)
 
+#translate Department
+main <-trlateDepart(main)
 # reclass bb scale to numeric % values
 main <-reclassBB(main)
 
