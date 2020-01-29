@@ -49,6 +49,7 @@ tail(MP)
 list.files(envrmt$path_org)
 
 dat <- read.csv(file.path(envrmt$path_org,"001_mainplot_data.csv"),header=T,sep="\t")
+dat$Plot.ID <- paste0(dat$treetyp,"_",dat$Plot.ID)
 # clean up cols
 dat <-dat[,-6:-9]
 dat <-dat[,-9:-13]
@@ -89,7 +90,7 @@ cor.test(rich,ttyp)
 cor.test(rich,tcla)
 
 #perform cor.test for total cover
-cor.test(covt,hlay)
+cor.test(covt,tlay)
 cor.test(covt,slay)
 cor.test(covt,hlay)
 cor.test(covt,ttyp)
