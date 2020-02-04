@@ -46,14 +46,16 @@ Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default"){
   if(display=="hc_nmds"){
   #plot with hc nmds
   sc<-scores(nmds)
-  ordiplot(nmds,type="n",main="hc_nmds")
+  ordiplot(nmds,type="n",main="hc_nmds", 
+           sub=paste0("nmds stress level: ",round(nmds$stress,4)))
   orditorp(nmds,display="sites",cex=1,air=0.01)
   points(sc[,1],sc[,2],cex=2,pch=20,col=cutclust)
   ordihull(nmds, cutclust, lty=2, col="blue")
   }
   if(display=="km_nmds"){
   #plot with km nmds 
-  ordiplot(nmds,type="n",main="km_nmds")
+  ordiplot(nmds,type="n",main="km_nmds",
+           sub=paste0("nmds stress level: ",round(nmds$stress,4)))
   orditorp(nmds,display="sites",cex=1,air=0.01)
   ordihull(nmds, km_cl$cluster, lty=3, col="grey60",lwd=2)
   points(sc[,1],sc[,2],cex=2,pch=20,col=km_cl$cluster)
@@ -78,13 +80,15 @@ Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default"){
     
       #plot with hc nmds
       sc<-scores(nmds)
-      ordiplot(nmds,type="n",main="hc_nmds")
+      ordiplot(nmds,type="n",main="hc_nmds",
+               sub=paste0("nmds stress level: ",round(nmds$stress,4)))
       orditorp(nmds,display="sites",cex=1,air=0.01)
       points(sc[,1],sc[,2],cex=2,pch=20,col=cutclust)
       ordihull(nmds, cutclust, lty=2, col="blue")
     
       #plot with km nmds 
-      ordiplot(nmds,type="n",main="km_nmds")
+      ordiplot(nmds,type="n",main="km_nmds",
+               sub=paste0("nmds stress level: ",round(nmds$stress,4)))
       orditorp(nmds,display="sites",cex=1,air=0.01)
       ordihull(nmds, km_cl$cluster, lty=3, col="grey60",lwd=2)
       points(sc[,1],sc[,2],cex=2,pch=20,col=km_cl$cluster)
