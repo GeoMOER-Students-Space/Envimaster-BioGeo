@@ -17,7 +17,7 @@
 # add stress level for nmds
 
 
-Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default"){
+Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default", main="name"){
   if (missing(cl)){
     stop("missing argument cl with no default")
   }
@@ -46,7 +46,7 @@ Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default"){
   if(display=="hc_nmds"){
   #plot with hc nmds
   sc<-scores(nmds)
-  ordiplot(nmds,type="n",main="hc_nmds", 
+  ordiplot(nmds,type="n",main=main, 
            sub=paste0("nmds stress level: ",round(nmds$stress,4)))
   orditorp(nmds,display="sites",cex=1,air=0.01)
   points(sc[,1],sc[,2],cex=2,pch=20,col=cutclust)
@@ -54,7 +54,7 @@ Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default"){
   }
   if(display=="km_nmds"){
   #plot with km nmds 
-  ordiplot(nmds,type="n",main="km_nmds",
+  ordiplot(nmds,type="n",main=main,
            sub=paste0("nmds stress level: ",round(nmds$stress,4)))
   orditorp(nmds,display="sites",cex=1,air=0.01)
   ordihull(nmds, km_cl$cluster, lty=3, col="grey60",lwd=2)
@@ -63,14 +63,14 @@ Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default"){
   if(display=="hc_dca"){
   #plot with hc dca points
   scd<-scores(dca)
-  plot(dca,display="sites",type="n", main="hc_dca")
+  plot(dca,display="sites",type="n", main=main)
   orditorp(dca,display="sites",cex=1,air=0.01)
   points(scd[,1],scd[,2],cex=2,pch=20,col=cutclust)
   ordihull(dca, cutclust, lty=2, col="blue")
   }
   if(display=="km_dca"){
   #plot with km dca points
-  plot(dca,display="sites",type="n", main="km_dca")
+  plot(dca,display="sites",type="n", main=main)
   orditorp(dca,display="sites",cex=1,air=0.01)
   points(scd[,1],scd[,2],cex=2,pch=20,col=km_cl$cluster)
   ordihull(dca, km_cl$cluster, lty=3, col="grey60",lwd=2)
