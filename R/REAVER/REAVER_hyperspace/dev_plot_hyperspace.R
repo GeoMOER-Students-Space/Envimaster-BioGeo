@@ -115,12 +115,12 @@ Reaver_plot_hyperspace <-function(df,cl,indi=FALSE,re=FALSE,display="default", m
   hc_ival <- indval(df, cutclust)
   print("Summary Indicators for HC")
   summary(hc_ival)  
-  
-  const_km <-const(df, km_cl$cluster)
-  import_km <-importance(df,km_cl$cluster,show=NA)
-  km_ival <- indval(df, km_cl$cluster) # summarys indicator
-  print("Summary Indicators for KM")
-  summary(km_ival)
+  #return(hc_ival)
+  #const_km <-const(df, km_cl$cluster)
+  #import_km <-importance(df,km_cl$cluster,show=NA)
+  #km_ival <- indval(df, km_cl$cluster) # summarys indicator
+  #print("Summary Indicators for KM")
+  #summary(km_ival)
   }
   ####################################################################
   if (re==TRUE){
