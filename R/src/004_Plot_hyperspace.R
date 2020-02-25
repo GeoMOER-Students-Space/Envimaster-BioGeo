@@ -126,6 +126,8 @@ Reaver_plot_hyperspace(SU_clean,3,display = "hc_nmds", main = "Subplots with Cov
 Reaver_plot_hyperspace(su_clean,3,display = "hc_nmds", main = "Subplots with only Occurance (cleaned)")
 
 # indicator species test ################################################################################
+
+# for the Substrate Tests the cluster number is = 1 DW 2 EP 3 SL (alpabetical order i assume)
 Reaver_plot_hyperspace(MP,5,display = "hc_nmds",indi=T)
 Reaver_plot_hyperspace(mp,5,display = "hc_nmds",indi=T)
 Reaver_plot_hyperspace(MP_clean,5,display = "hc_nmds", indi=T)
@@ -135,3 +137,10 @@ Reaver_plot_hyperspace(SU,3,display = "hc_nmds",indi=T)
 Reaver_plot_hyperspace(su,3,display = "hc_nmds",indi=T)
 Reaver_plot_hyperspace(SU_clean,3,display = "hc_nmds", indi=T)
 Reaver_plot_hyperspace(su_clean,3,display = "hc_nmds", indi=T)
+
+# indicator test with defined clusters (withour cluster analysis on raw dataset, by DW,EP,SL)
+ind_groups(SU)
+ind_groups(su)
+ind_groups(SU_clean)
+ind_groups(su_clean)
+
