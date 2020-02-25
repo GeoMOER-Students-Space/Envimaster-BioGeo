@@ -107,3 +107,21 @@ delete.species <-function(tab,name){
   }
   
 }
+
+
+ind_groups <- function(df){
+  length(rownames(df))
+  dw <- sum(str_count(rownames(df),pattern ="DW"))
+  ep <- sum(str_count(rownames(df),pattern ="EP"))
+  sl <- sum(str_count(rownames(df),pattern ="SL"))
+  
+  var <- c(rep(1,dw),rep(2,ep),rep(3,sl))
+  testlength <-length(rownames(df))==length(var)
+  print(testlength)
+  import_hc <-importance(df, var,show=NA)
+  hc_ival <- indval(df, var)
+  print("Summary Indicators for defined groups")
+  summary(hc_ival)  
+    }
+
+
