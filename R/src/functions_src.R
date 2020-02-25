@@ -120,6 +120,8 @@ ind_groups <- function(df){
   print(testlength)
   import_hc <-importance(df, var,show=NA)
   hc_ival <- indval(df, var)
+  #return(hc_ival)
+  #return(hc_ival$indval)
   print("Summary Indicators for defined groups")
   summary(hc_ival)  
     }
