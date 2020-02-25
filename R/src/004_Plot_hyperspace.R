@@ -47,45 +47,24 @@ su <-read.csv(file.path(envrmt$path_privot,"substrates_occur.csv"),row.names = 1
 # for interpretation of nmds stress level:
 # over 0.2 caution, over 0.3 highly suspect
 
+# first overlook - all methods compared
+
 # accumulated cover
-#Reaver_plot_hyperspace(SL,5,display = "hc_nmds")
+#Reaver_plot_hyperspace(SL,5)
 #Reaver_plot_hyperspace(DW,3)
 #Reaver_plot_hyperspace(EP,3)
-Reaver_plot_hyperspace(MP,3,indi = T)
-Reaver_plot_hyperspace(SU,3,display = "hc_nmds")
+Reaver_plot_hyperspace(MP,3)
+Reaver_plot_hyperspace(SU,3)
 
 
 # occuriance only
-Reaver_plot_hyperspace(sl,3,display = "hc_nmds")
-Reaver_plot_hyperspace(dw,3)
-Reaver_plot_hyperspace(ep,3)
+#Reaver_plot_hyperspace(sl,3)
+#Reaver_plot_hyperspace(dw,3)
+#Reaver_plot_hyperspace(ep,3)
 Reaver_plot_hyperspace(mp,3)
-Reaver_plot_hyperspace(su,3,display = "hc_nmds",main="substrates")
+Reaver_plot_hyperspace(su,3)
 
-
-# print output for paper for MP
-par(mfrow=c(2,2))
-dev.off()
-Reaver_plot_hyperspace(MP,5,display = "hc_nmds",main="Mainplots with Coverage")
-Reaver_plot_hyperspace(mp,5,display = "hc_nmds",main="Mainplots with only Occurance")
-Reaver_plot_hyperspace(MP_clean,5,display = "hc_nmds", main = "Mainplots with Coverage (cleaned)")
-Reaver_plot_hyperspace(mp_clean,5,display = "hc_nmds", main = "Mainplots with only Occurance (cleaned)")
-
-
-# print output for paper for SU
-par(mfrow=c(2,2))
-dev.off()
-Reaver_plot_hyperspace(SU,3,display = "hc_nmds",main="Subplots with Coverage")
-Reaver_plot_hyperspace(su,3,display = "hc_nmds",main="Subplots with only Occurance")
-Reaver_plot_hyperspace(SU_clean,3,display = "hc_nmds", main = "Subplots with Coverage (cleaned)")
-Reaver_plot_hyperspace(su_clean,3,display = "hc_nmds", main = "Subplots with only Occurance (cleaned)")
-
-
-# indicator species test
-Reaver_plot_hyperspace(MP,5,display = "hc_nmds",indi=T)
-Reaver_plot_hyperspace(mp,5,display = "hc_nmds",indi=T)
-Reaver_plot_hyperspace(MP_clean,5,display = "hc_nmds", indi=T)
-Reaver_plot_hyperspace(mp_clean,5,display = "hc_nmds", indi=T)
+# clean up dataframes ####################################################################################
 
 ### modifie tables
 
@@ -110,9 +89,49 @@ mp_clean <- delete.species(mp,"hypnum.cupressiforme")
 mp_clean <- delete.species(mp_clean,"brachythecium.rutabulum")
 SU_clean <- delete.species(SU,"hypnum.cupressiforme")
 su_clean <- delete.species(su,"hypnum.cupressiforme")
-#run hyperspace for cleand tabs
-Reaver_plot_hyperspace(SL,3,display = "hc_nmds")
-Reaver_plot_hyperspace(DW_clean,2)
-Reaver_plot_hyperspace(EP_clean,3,display = "hc_nmds")
-Reaver_plot_hyperspace(MP_clean,3,display = "hc_nmds")
-Reaver_plot_hyperspace(SU_clean,3,display = "hc_nmds")
+
+
+# cleaned - all methods compared ##################################################################
+
+# accumulated cover
+#Reaver_plot_hyperspace(SL_clean,5)
+#Reaver_plot_hyperspace(DW_clean,3)
+#Reaver_plot_hyperspace(EP_clean,3)
+Reaver_plot_hyperspace(MP_clean,3)
+Reaver_plot_hyperspace(SU_clean,3)
+
+
+# occuriance only
+#Reaver_plot_hyperspace(sl_clean,3)
+#Reaver_plot_hyperspace(dw_clean,3)
+#Reaver_plot_hyperspace(ep_clean,3)
+Reaver_plot_hyperspace(mp_clean,3)
+Reaver_plot_hyperspace(su_clean,3)
+
+# print output for paper for MP #####################################################################
+par(mfrow=c(2,2))
+dev.off()
+Reaver_plot_hyperspace(MP,5,display = "hc_nmds",main="Mainplots with Coverage")
+Reaver_plot_hyperspace(mp,5,display = "hc_nmds",main="Mainplots with only Occurance")
+Reaver_plot_hyperspace(MP_clean,5,display = "hc_nmds", main = "Mainplots with Coverage (cleaned)")
+Reaver_plot_hyperspace(mp_clean,5,display = "hc_nmds", main = "Mainplots with only Occurance (cleaned)")
+
+
+# print output for paper for SU
+par(mfrow=c(2,2))
+dev.off()
+Reaver_plot_hyperspace(SU,3,display = "hc_nmds",main="Subplots with Coverage")
+Reaver_plot_hyperspace(su,3,display = "hc_nmds",main="Subplots with only Occurance")
+Reaver_plot_hyperspace(SU_clean,3,display = "hc_nmds", main = "Subplots with Coverage (cleaned)")
+Reaver_plot_hyperspace(su_clean,3,display = "hc_nmds", main = "Subplots with only Occurance (cleaned)")
+
+# indicator species test ################################################################################
+Reaver_plot_hyperspace(MP,5,display = "hc_nmds",indi=T)
+Reaver_plot_hyperspace(mp,5,display = "hc_nmds",indi=T)
+Reaver_plot_hyperspace(MP_clean,5,display = "hc_nmds", indi=T)
+Reaver_plot_hyperspace(mp_clean,5,display = "hc_nmds", indi=T)
+
+Reaver_plot_hyperspace(SU,3,display = "hc_nmds",indi=T)
+Reaver_plot_hyperspace(su,3,display = "hc_nmds",indi=T)
+Reaver_plot_hyperspace(SU_clean,3,display = "hc_nmds", indi=T)
+Reaver_plot_hyperspace(su_clean,3,display = "hc_nmds", indi=T)
