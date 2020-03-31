@@ -5,12 +5,17 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="highlighten">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
+      <customproperties>
+        <property key="legend/title-label" value="Mainplots"/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="highlighten">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="outline_copy20200331111919324" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/highlight_department.shp" name="simpl_outline">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="outline_copy20200331111919324" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/highlight_department.shp" name="simpl_outline">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="highlight_department_copy20200331111745908" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/highlight_department.shp" name="crossed">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="highlight_department_copy20200331111745908" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/highlight_department.shp" name="crossed">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="highlight_department20200331111207588" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/highlight_department.shp" name="dotted">
@@ -22,16 +27,11 @@
       <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="hillshade20190601122730575" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/hillshade.tif" name="hillshade">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
-        <customproperties>
-          <property key="legend/title-label" value="Mainplots"/>
-        </customproperties>
-      </layer-tree-layer>
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="waldort_clean20200120150956574" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldort_clean">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Design2">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Design2">
       <customproperties/>
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="mainplot_positions_copy20200120161531962" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions copy">
         <customproperties/>
@@ -39,7 +39,7 @@
       <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="waldort_clean_copy20200120161409573" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldorte2">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="RGB_mof_proj20190601122010261" source="C:/Envimaster/mpg-envinsys-plygrnd/data/aerial/processed/raster/RGB_mof_proj.tif" name="RGB_mof_proj">
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="RGB_mof_proj20190601122010261" source="C:/Envimaster/mpg-envinsys-plygrnd/data/aerial/processed/raster/RGB_mof_proj.tif" name="RGB_mof_proj">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -48,10 +48,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>476907.20629175577778369</xmin>
-      <ymin>5630882.52879308443516493</ymin>
-      <xmax>479054.87629175570327789</xmax>
-      <ymax>5633122.17879309039562941</ymax>
+      <xmin>476257.07092445547459647</xmin>
+      <ymin>5631092.16427886672317982</ymin>
+      <xmax>478404.74092445540009066</xmax>
+      <ymax>5633331.81427887268364429</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -89,15 +89,20 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Unchecked" name="highlighten">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="simpl_outline" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="mainplot_positions" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="highlighten">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="simpl_outline" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="outline_copy20200331111919324" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="outline_copy20200331111919324" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="crossed" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="crossed" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="highlight_department_copy20200331111745908" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="highlight_department_copy20200331111745908" visible="1"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="dotted" showFeatureCount="0">
@@ -112,18 +117,13 @@
           <legendlayerfile isInOverview="0" layerid="hillshade20190601122730575" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="mainplot_positions" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="1"/>
-        </filegroup>
-      </legendlayer>
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="waldort_clean" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="waldort_clean20200120150956574" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Design2">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Design2">
       <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="mainplot_positions copy" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="mainplot_positions_copy20200120161531962" visible="0"/>
@@ -134,14 +134,14 @@
           <legendlayerfile isInOverview="0" layerid="waldort_clean_copy20200120161409573" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="RGB_mof_proj" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="RGB_mof_proj" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="RGB_mof_proj20190601122010261" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="RGB_mof_proj20190601122010261" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
   </legend>
-  <Composer title="plotpos" visible="1">
+  <Composer title="plotpos" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{a141a799-aa98-4cc2-8fed-cbf65f1facd7}" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -275,7 +275,7 @@
           <annotationFontProperties description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="3.75072" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="297" outlineWidth="0.3" excludeFromExports="0" uuid="{a141a799-aa98-4cc2-8fed-cbf65f1facd7}" height="210" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.24929" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="297" outlineWidth="0.3" excludeFromExports="0" uuid="{a141a799-aa98-4cc2-8fed-cbf65f1facd7}" height="210" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -313,7 +313,7 @@
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="0" blue="0" green="0"/>
         <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="186.998" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="186.998" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="42.7692" outlineWidth="0.3" excludeFromExports="0" uuid="{b5723902-1f0f-4c70-be4e-3da060672591}" height="20" itemRotation="0" frame="false" pagex="238.752">
+        <ComposerItem pagey="186.998" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="186.998" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.7" outlineWidth="0.3" excludeFromExports="0" uuid="{b5723902-1f0f-4c70-be4e-3da060672591}" height="20" itemRotation="0" frame="false" pagex="238.752">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -350,7 +350,7 @@
           <customproperties/>
           <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
             <customproperties>
-              <property key="legend/title-label" value="Mainplots"/>
+              <property key="legend/title-label" value="Mainplot Positions"/>
             </customproperties>
           </layer-tree-layer>
           <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="waldort_clean20200120150956574" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldort_clean">
@@ -364,8 +364,13 @@
               <property key="legend/title-label" value="Departments"/>
             </customproperties>
           </layer-tree-layer>
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="highlight_department_copy20200331111745908" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/highlight_department.shp" name="crossed">
+            <customproperties>
+              <property key="legend/title-label" value="Area of interest"/>
+            </customproperties>
+          </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="119.239" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="119.239" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.7" outlineWidth="0.3" excludeFromExports="0" uuid="{5741ffef-ebb6-4ec9-b26a-613f3c4cd587}" height="55.9" itemRotation="0" frame="false" pagex="238.752">
+        <ComposerItem pagey="115.154" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="115.154" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.7" outlineWidth="0.3" excludeFromExports="0" uuid="{5741ffef-ebb6-4ec9-b26a-613f3c4cd587}" height="61.9" itemRotation="0" frame="false" pagex="238.752">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -424,7 +429,7 @@
           <annotationFontProperties description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="3.66434" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="297" outlineWidth="0.3" excludeFromExports="0" uuid="{4640b3d3-dee6-4c71-b9f2-f0e47af54abd}" height="210" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="3.65454" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="297" outlineWidth="0.3" excludeFromExports="0" uuid="{4640b3d3-dee6-4c71-b9f2-f0e47af54abd}" height="210" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -776,6 +781,7 @@
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -801,7 +807,7 @@
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="FB_TEXT" index="0" name=""/>
         <alias field="FE_DWBAGRP" index="1" name=""/>
@@ -822,10 +828,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -907,16 +913,16 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="173,0,2,255"/>
+              <prop k="color" v="0,0,0,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="173,0,2,255"/>
+              <prop k="outline_color" v="0,0,0,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="0.26"/>
               <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="diagonal_x"/>
+              <prop k="style" v="vertical"/>
             </layer>
           </symbol>
         </symbols>
@@ -2420,7 +2426,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="0,26,201,255"/>
+              <prop k="color" v="59,246,255,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
