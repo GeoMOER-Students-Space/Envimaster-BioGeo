@@ -5,29 +5,29 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Design1">
+    <layer-tree-group expanded="1" checked="Qt::Checked" name="Design1">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="hillshade20190601122730575" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/hillshade.tif" name="hillshade">
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="hillshade20190601122730575" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/hillshade.tif" name="hillshade">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
         <customproperties>
           <property key="legend/title-label" value="Mainplots"/>
         </customproperties>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="waldort_clean20200120150956574" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldort_clean">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="waldort_clean20200120150956574" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldort_clean">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Checked" name="Design2">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Design2">
       <customproperties/>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions_copy20200120161531962" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions copy">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="mainplot_positions_copy20200120161531962" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions copy">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="waldort_clean_copy20200120161409573" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldorte2">
+      <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="waldort_clean_copy20200120161409573" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldorte2">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="RGB_mof_proj20190601122010261" source="C:/Envimaster/mpg-envinsys-plygrnd/data/aerial/processed/raster/RGB_mof_proj.tif" name="RGB_mof_proj">
+      <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="RGB_mof_proj20190601122010261" source="C:/Envimaster/mpg-envinsys-plygrnd/data/aerial/processed/raster/RGB_mof_proj.tif" name="RGB_mof_proj">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -74,37 +74,37 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendgroup open="true" checked="Qt::Unchecked" name="Design1">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="hillshade" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Checked" name="Design1">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="hillshade" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="hillshade20190601122730575" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="hillshade20190601122730575" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="mainplot_positions" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="mainplot_positions" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="waldort_clean" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="waldort_clean" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="waldort_clean20200120150956574" visible="0"/>
+          <legendlayerfile isInOverview="0" layerid="waldort_clean20200120150956574" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Checked" name="Design2">
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="mainplot_positions copy" showFeatureCount="0">
+    <legendgroup open="true" checked="Qt::Unchecked" name="Design2">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="mainplot_positions copy" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="mainplot_positions_copy20200120161531962" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="mainplot_positions_copy20200120161531962" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="waldorte2" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="waldorte2" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="waldort_clean_copy20200120161409573" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="waldort_clean_copy20200120161409573" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="RGB_mof_proj" showFeatureCount="0">
+      <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="RGB_mof_proj" showFeatureCount="0">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="RGB_mof_proj20190601122010261" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="RGB_mof_proj20190601122010261" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -249,7 +249,13 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <customproperties/>
+      <customproperties>
+        <property key="imageCropMarginBottom" value="0"/>
+        <property key="imageCropMarginLeft" value="0"/>
+        <property key="imageCropMarginRight" value="0"/>
+        <property key="imageCropMarginTop" value="0"/>
+        <property key="imageCropToContents" value="false"/>
+      </customproperties>
     </Composition>
   </Composer>
   <Composer title="plotpos 2" visible="1">
@@ -392,7 +398,13 @@
           <customproperties/>
         </ComposerItem>
       </ComposerMap>
-      <customproperties/>
+      <customproperties>
+        <property key="imageCropMarginBottom" value="0"/>
+        <property key="imageCropMarginLeft" value="0"/>
+        <property key="imageCropMarginRight" value="0"/>
+        <property key="imageCropMarginTop" value="0"/>
+        <property key="imageCropToContents" value="false"/>
+      </customproperties>
     </Composition>
   </Composer>
   <projectlayers>
