@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
       <customproperties>
         <property key="legend/title-label" value="Mainplots"/>
       </customproperties>
@@ -89,9 +89,9 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="mainplot_positions" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="mainplot_positions" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="highlighten">
@@ -290,7 +290,7 @@
       </customproperties>
     </Composition>
   </Composer>
-  <Composer title="plotpos 2" visible="1">
+  <Composer title="plotpos 2" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{a141a799-aa98-4cc2-8fed-cbf65f1facd7}" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">

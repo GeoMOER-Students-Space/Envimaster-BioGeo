@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
       <customproperties>
         <property key="legend/title-label" value="Mainplots"/>
       </customproperties>
@@ -89,9 +89,9 @@
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="mainplot_positions" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="mainplot_positions" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="mainplot_positions20200120155454625" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="highlighten">
@@ -313,7 +313,7 @@
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="0" blue="0" green="0"/>
         <textColor alpha="255" red="0" blue="0" green="0"/>
-        <ComposerItem pagey="186.998" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="186.998" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.7" outlineWidth="0.3" excludeFromExports="0" uuid="{b5723902-1f0f-4c70-be4e-3da060672591}" height="20" itemRotation="0" frame="false" pagex="238.752">
+        <ComposerItem pagey="186.998" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="186.998" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="42.7692" outlineWidth="0.3" excludeFromExports="0" uuid="{b5723902-1f0f-4c70-be4e-3da060672591}" height="16.7662" itemRotation="0" frame="false" pagex="238.752">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -348,11 +348,6 @@
         </styles>
         <layer-tree-group expanded="1" checked="Qt::Checked" name="">
           <customproperties/>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="mainplot_positions20200120155454625" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/mainplot_positions.shp" name="mainplot_positions">
-            <customproperties>
-              <property key="legend/title-label" value="Mainplot Positions"/>
-            </customproperties>
-          </layer-tree-layer>
           <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="waldort_clean20200120150956574" source="C:/Envimaster/Envimaster-BioGeo/GIS/data_gis/waldort_clean.shp" name="waldort_clean">
             <customproperties>
               <property key="legend/label-0" value="Fargus sylvatica"/>
@@ -370,14 +365,14 @@
             </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="115.154" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="115.154" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.7" outlineWidth="0.3" excludeFromExports="0" uuid="{5741ffef-ebb6-4ec9-b26a-613f3c4cd587}" height="61.9" itemRotation="0" frame="false" pagex="238.752">
+        <ComposerItem pagey="119.9" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="238.752" y="119.9" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="54.7" outlineWidth="0.3" excludeFromExports="0" uuid="{5741ffef-ebb6-4ec9-b26a-613f3c4cd587}" height="55.9" itemRotation="0" frame="false" pagex="238.752">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="5631529.75649172533303499" xmin="476283.5853177331155166" ymax="5632894.75931917410343885" xmax="478214.08931655343621969"/>
+        <Extent ymin="5631529.75649172533303499" xmin="476267.62061501119751483" ymax="5632894.75931917410343885" xmax="478198.12461383151821792"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{7bd46780-7b30-4c50-ae69-9dfe92e8c92f}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -429,7 +424,7 @@
           <annotationFontProperties description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="3.65454" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="297" outlineWidth="0.3" excludeFromExports="0" uuid="{4640b3d3-dee6-4c71-b9f2-f0e47af54abd}" height="210" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="3.66434" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="297" outlineWidth="0.3" excludeFromExports="0" uuid="{4640b3d3-dee6-4c71-b9f2-f0e47af54abd}" height="210" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
