@@ -133,8 +133,9 @@ ind_groups <- function(df){
 #mcex= cex for maintitel
 #acex= cex for axis
 #lwd= cluster line witdt
+# x/y relativ positions of "nmds stress level" on plots dependet on the axis values
 
-print_hc_nmds <-function(df,cl,lcex=1,pcex=2,mcex=1,acex=1,lwd=1, air=1,main="name"){
+print_hc_nmds <-function(df,cl,lcex=1,pcex=2,mcex=1,acex=1,lwd=1, air=1,main="name",x,y){
   #input check
   if (missing(cl)){
     stop("missing argument cl with no default")
@@ -155,8 +156,8 @@ print_hc_nmds <-function(df,cl,lcex=1,pcex=2,mcex=1,acex=1,lwd=1, air=1,main="na
            cex.main=mcex,
            cex.axis=acex,
            mar=c(1,1,1,1))
-  orditorp(nmds,display="sites",cex=lcex)
-  text(x=1,y=-1.2,cex=1,label=paste0("nmds stress level: ",round(nmds$stress,4)))
+  orditorp(nmds,display="sites",cex=lcex,air=air)
+  text(x=x,y=y,cex=1,label=paste0("nmds stress level: ",round(nmds$stress,4)))
   points(sc[,1],sc[,2],cex=pcex,pch=20,col=cutclust)
   ordihull(nmds, cutclust, lty=2,lwd=lwd, col="blue")
 }
