@@ -76,6 +76,12 @@ boxplot(MP,las=3) #hyp cup, bra rut
 boxplot(SU,las=3) #hyp cup
 # not necceserie for only occourence
 
+# plot boxplots (mar: defines the distance, cex.axis the ces of the labels)
+par(mar=c(11,2,2,1))
+boxplot(MP,las=3,cex.axis=0.9)
+boxplot(SU,las=3,cex.axis=0.9)
+dev.off()
+
 colnames(DW)
 DW_clean <- delete.species(DW,"hypnum.cupressiforme")
 DW_clean <- delete.species(DW_clean,"brachythecium.rutabulum")
@@ -110,7 +116,8 @@ Reaver_plot_hyperspace(su_clean,3)
 
 # print output for paper for MP #####################################################################
 par(mfrow=c(2,2))
-dev.off()
+par(mar=c(5,2,2,1))
+#dev.off()
 Reaver_plot_hyperspace(MP,5,display = "hc_nmds",main="Mainplots with Coverage")
 Reaver_plot_hyperspace(mp,5,display = "hc_nmds",main="Mainplots with only Occurance")
 Reaver_plot_hyperspace(MP_clean,5,display = "hc_nmds", main = "Mainplots with Coverage (cleaned)")
